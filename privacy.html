@@ -24,6 +24,8 @@ footer{margin-top:40px;color:var(--dim);font-size:13px}
 <p>• 닉네임(친구 코드): 이용자가 정하거나 자동으로 정해지는 이름이에요. 친구 찾기, 랭킹, 방문 화면에 쓰여요.</p>
 <p>• 게임 기록: 은하의 별 정보, 별 포인트, 최고 등급, AU, 친구 관계, 친구 은하에 남긴 선물 별과 정해진 문구 메시지예요. 친구 방문, 랭킹, 선물 기능에 써요.</p>
 <p>• 재화 기록: 은하 잔액과 은하를 얻고 쓴 기록(상품, 시각)이에요. 재화 관리, 부정 이용 방지, 환불 처리에 써요.</p>
+<p>• 이용 기록(분석): 게임을 시작함, 첫 별을 만듦, 몇 등급에 도달함, 퀘스트·업적 달성, 상점·친구 화면을 엶, 광고를 봄 같은 이용 사건과 기기 종류, 운영체제 버전, 대략적인 나라예요. Google 애널리틱스(Firebase)로 모으고, 게임을 더 쉽고 재미있게 고치는 데에만 써요. 닉네임이나 연락처는 보내지 않아요.</p>
+<p>• 오류 기록: 앱이 멈추거나 오류가 났을 때의 기술 정보(오류 내용, 기기 종류, 운영체제 버전)예요. Firebase Crashlytics로 모아 오류를 고치는 데 써요.</p>
 <p>설정 같은 나머지 게임 기록은 이용자의 기기 안에만 저장돼요.</p>
 <h3>2. 다른 이용자에게 보이는 정보</h3>
 <p>닉네임, 별 포인트·최고 등급·AU, 내 은하의 모습(별 배치)은 랭킹, 랜덤 추천, 은하 방문을 통해 다른 이용자에게 보여요. 메시지는 정해진 문구만 쓸 수 있어요.</p>
@@ -34,13 +36,13 @@ footer{margin-top:40px;color:var(--dim);font-size:13px}
 <h3>5. 광고</h3>
 <p>이용자가 원할 때만 보는 보상형 광고(배속 잠깐 쓰기, 궤도 고정, 별 드랍 등)가 있어요. 광고는 Google AdMob이 보여 주며, 광고를 보여 주고 측정하기 위해 Google이 기기의 광고 ID 같은 정보를 처리할 수 있어요. 광고 ID는 기기 설정에서 재설정하거나 맞춤 광고를 끌 수 있어요. 자세한 내용은 Google 개인정보처리방침을 따라요.</p>
 <h3>6. 처리 위탁과 제3자 제공</h3>
-<p>서버와 계정 인증은 Google LLC(Firebase, Google Cloud), 광고는 Google AdMob, 결제와 로그인은 Google Play에 맡겨 처리해요. 서버 데이터는 대한민국(서울) 리전에 저장되며, Google의 처리 과정에서 국외로 이전될 수 있어요. 법령에 따른 경우를 빼고는 이용자의 정보를 다른 곳에 팔거나 넘기지 않아요.</p>
+<p>서버와 계정 인증은 Google LLC(Firebase, Google Cloud), 이용 기록과 오류 기록은 Google 애널리틱스·Firebase Crashlytics, 광고는 Google AdMob, 결제와 로그인은 Google Play에 맡겨 처리해요. 서버 데이터는 대한민국(서울) 리전에 저장되며, Google의 처리 과정에서 국외로 이전될 수 있어요. 법령에 따른 경우를 빼고는 이용자의 정보를 다른 곳에 팔거나 넘기지 않아요.</p>
 <h3>7. 보관과 삭제</h3>
 <p>서버의 정보는 앱 계정이 있는 동안 보관해요. 앱을 지우거나 앱 데이터를 삭제하면 기기의 기록이 지워지고, Google 계정을 연결하지 않은 경우 그 앱 계정을 다시 찾을 수 없어 서버의 기록도 다시 이용할 수 없어요. 서버의 기록을 지우고 싶으면 닉네임(친구 코드)과 함께 아래 문의처로 알려 주세요. 확인 뒤 지체 없이 삭제해요. 다만 구매 기록은 구매 복원과 환불 처리를 위해 관련 법령이 정한 기간(전자상거래법상 대금 결제·재화 공급 기록 5년) 동안 보관해요.</p>
 <h3>8. 이용자의 권리</h3>
 <p>이용자는 언제든 자신의 정보를 열람, 정정, 삭제하거나 처리 정지를 요청할 수 있어요. 아래 문의처로 요청해 주세요.</p>
 <h3>9. 처리의 법적 근거 (유럽 경제 지역·영국)</h3>
-<p>유럽 경제 지역(EEA)과 영국의 이용자 정보는 다음 근거로 처리해요. 게임 기능 제공(계정, 친구, 방문, 랭킹, 재화)은 서비스 이용 계약의 이행, 부정 이용 방지와 보안은 개발자의 정당한 이익, 맞춤 광고는 이용자의 동의, 구매 기록 보관은 법적 의무예요. 동의는 언제든 철회할 수 있어요.</p>
+<p>유럽 경제 지역(EEA)과 영국의 이용자 정보는 다음 근거로 처리해요. 게임 기능 제공(계정, 친구, 방문, 랭킹, 재화)은 서비스 이용 계약의 이행, 부정 이용 방지와 보안, 이용 기록·오류 기록을 통한 게임 개선은 개발자의 정당한 이익, 맞춤 광고는 이용자의 동의, 구매 기록 보관은 법적 의무예요. 동의는 언제든 철회할 수 있어요.</p>
 <h3>10. 국외 이용자의 추가 권리</h3>
 <p>• 유럽 경제 지역·영국: 열람, 정정, 삭제, 처리 제한, 처리 반대, 이동(데이터 받기)을 요청할 수 있고, 거주하는 나라의 개인정보 감독기관에 민원을 낼 수 있어요. 서버 데이터가 이 지역 밖으로 옮겨질 때는 Google이 표준 계약 조항 같은 보호 장치를 적용해요.</p>
 <p>• 미국 캘리포니아: 어떤 정보를 수집하는지 알 권리, 삭제·정정을 요청할 권리, 권리를 행사했다고 차별받지 않을 권리가 있어요. 개발자는 이용자의 정보를 돈을 받고 팔지 않아요. 맞춤 광고를 위한 광고 ID 공유를 원하지 않으면 기기 설정에서 맞춤 광고를 끄면 돼요.</p>
@@ -60,6 +62,8 @@ footer{margin-top:40px;color:var(--dim);font-size:13px}
 <p>• Nickname (friend code): a name you choose or one assigned automatically. Used for finding friends, the ranking and visits.</p>
 <p>• Game records: the stars in your galaxy, star points, best grade, AU, friend connections, and gift stars with set messages left in friends' galaxies. Used for visits, the ranking and gifts.</p>
 <p>• Currency records: your Galaxy balance and when Galaxies were gained or spent (item, time). Used to manage the currency, prevent abuse and handle refunds.</p>
+<p>• Usage (analytics): events such as starting a game, making the first star, reaching a grade, completing quests or achievements, opening the shop or friends screen and watching ads, plus device model, OS version and approximate country. Collected with Google Analytics for Firebase and used only to make the game easier and more fun. Nicknames and contact details are not sent.</p>
+<p>• Error reports: technical details when the app crashes or hits an error (the error, device model, OS version). Collected with Firebase Crashlytics and used to fix bugs.</p>
 <p>Other records such as settings are stored only on your device.</p>
 <h3>2. What other players can see</h3>
 <p>Your nickname, star points, best grade, AU and the look of your galaxy (its stars) are shown to other players through the ranking, random suggestions and visits. Messages can only be chosen from set phrases.</p>
@@ -70,13 +74,13 @@ footer{margin-top:40px;color:var(--dim);font-size:13px}
 <h3>5. Ads</h3>
 <p>The app has rewarded ads you watch only when you choose to (short speed use, orbit lock, star drops, etc.). Ads are served by Google AdMob, and Google may process information such as your device's advertising ID to show and measure them. You can reset the advertising ID or turn off personalized ads in your device settings. See Google's privacy policy for details.</p>
 <h3>6. Service providers and sharing</h3>
-<p>The server and sign-in are handled by Google LLC (Firebase, Google Cloud), ads by Google AdMob, and payments and sign-in by Google Play. Server data is stored in the Seoul (Korea) region and may be transferred abroad as part of Google's processing. Except where required by law, your information is never sold or handed to others.</p>
+<p>The server and sign-in are handled by Google LLC (Firebase, Google Cloud), usage and error reports by Google Analytics and Firebase Crashlytics, ads by Google AdMob, and payments and sign-in by Google Play. Server data is stored in the Seoul (Korea) region and may be transferred abroad as part of Google's processing. Except where required by law, your information is never sold or handed to others.</p>
 <h3>7. Retention and deletion</h3>
 <p>Server data is kept while the app account exists. Uninstalling the app or clearing its data removes the records on your device, and without a linked Google account that app account can't be found again, so its server records can't be used any more. To have your server records deleted, contact us below with your nickname (friend code); we delete them promptly after checking. Purchase records are kept for the period set by law (5 years under Korea's E-Commerce Act) to restore purchases and handle refunds.</p>
 <h3>8. Your rights</h3>
 <p>You can ask at any time to see, correct or delete your information, or to stop its processing. Please contact us below.</p>
 <h3>9. Legal bases (EEA and UK)</h3>
-<p>For users in the European Economic Area (EEA) and the UK, information is processed on these bases: providing the game features (account, friends, visits, ranking, currency) to perform our contract with you; preventing abuse and keeping the service secure under our legitimate interests; personalized ads with your consent; and keeping purchase records as a legal obligation. You can withdraw consent at any time.</p>
+<p>For users in the European Economic Area (EEA) and the UK, information is processed on these bases: providing the game features (account, friends, visits, ranking, currency) to perform our contract with you; preventing abuse, keeping the service secure and improving the game through usage and error reports under our legitimate interests; personalized ads with your consent; and keeping purchase records as a legal obligation. You can withdraw consent at any time.</p>
 <h3>10. Additional rights for users outside Korea</h3>
 <p>• EEA and UK: you can request access, correction, deletion, restriction, objection and portability (a copy of your data), and you may complain to the data protection authority in your country. When server data moves outside these regions, Google applies safeguards such as the Standard Contractual Clauses.</p>
 <p>• California, USA: you have the right to know what information is collected, to request deletion or correction, and not to be treated differently for using these rights. The developer does not sell your information for money. If you do not want your advertising ID shared for personalized ads, turn off personalized ads in your device settings.</p>
